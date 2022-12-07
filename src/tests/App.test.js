@@ -1,9 +1,8 @@
-import React from 'react';
 import { act } from 'react-dom/test-utils';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from '../App';
 import renderWithRouter from '../renderWithRouter';
+import App from '../App';
 
 describe('Bateria de teste para verificar os elementos que aparecerão na tela no momento da inicialização do app e seu comportamento', () => {
   test('Testa se existe a uma barra de navegação no momento da inicalização do app', () => {
