@@ -63,9 +63,9 @@ describe('Sequência de testes para verificar a integridade e operacionalidade d
 
     act(() => history.push('/favorites'));
 
-    const getPokemonName = screen.getAllByTestId(/pokemon-name/);
-    const getPokemonType = screen.getAllByTestId(/pokemon-type/);
-    const getPokemonWeight = screen.getAllByTestId(/pokemon-weight/);
+    const getPokemonName = screen.getAllByTestId(/^pokemon-name$/);
+    const getPokemonType = screen.getAllByTestId(/^pokemon-type$/);
+    const getPokemonWeight = screen.getAllByTestId(/^pokemon-weight$/);
 
     expect(getPokemonName).toHaveLength(3);
     expect(getPokemonType).toHaveLength(3);
